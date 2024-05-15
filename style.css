@@ -1,0 +1,130 @@
+*{
+    padding: 0; 
+    margin: 0; 
+    list-style: none; 
+    text-decoration: none; 
+    box-sizing: border-box;
+}
+:root {
+    --bg-color: #333 ; 
+    --main-color:rgb(1238,103,48);  
+    --white-color:rgb(187,187,187);
+    --content-color:rgb(199, 93, 52); 
+    --shooting-color:rgba(237, 83, 22, 0.652) ;
+    --font-size : 2.4rem ; 
+}
+body{
+    background-color: #333;
+}
+.navbar-brand{
+    color: var(--main-color);
+    font-size: var(--font-size);
+}
+.nav-link , .active{
+    color: var(--white-color); 
+    font-size: 20px; 
+    font-family: cursive; 
+}
+.content-main{
+    margin-top: 120px;
+}
+.content-main h4{
+    color:var(--content-color) ; 
+    font-size: 37px; 
+    font-family: cursive;
+    font-weight: 500; 
+}
+.content-main h1{
+    color: var(--white-color); 
+    font-size: 40px; 
+    font-weight: bold;
+}
+.content-main h2{
+    color:var(--content-color); 
+    font-size: 35px;
+    font-family: cursive; 
+    font-weight: bold; 
+}
+.content-main a{
+    background-color: var(--content-color);
+    color: var(--white-color) ; 
+    padding: 15px 65px;
+}
+ h1{
+    color: var(--shooting-color);
+}
+.card{
+    background-color: #333; 
+    color: var(--white-color);
+    border: none; 
+    box-shadow: 0px 0px 1px 1px #2f2d2d;
+    height: 550px;
+}
+.card .card-img img{
+    height: 400px;
+    position: relative;
+    left: 20px;
+}
+.card .card-body{
+    text-align: center; 
+}
+#shooting .finish{
+    padding: 20px;
+    text-align: center; 
+    color: var(--white-color); 
+    box-shadow: 0px 0px 3px 5px rgb(47, 46, 46);
+}
+.catching-content,.Jumping-content{
+    margin-top: 150px;
+}
+.catching-content,.Jumping-content h1 {
+    color: var(--shooting-color); 
+}
+.catching-content h5,.Jumping-content h5{
+    color: var(--white-color); 
+    text-align: center; 
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+    font-weight: bold;
+}
+.catchingDivs div{
+    box-shadow: 0px 0px 1px 1px rgb(58, 58, 58);
+    text-align: center;
+}
+.catchingDivs div h1{
+    color: var(--shooting-color);
+}
+.catchingDivs div p{
+    color: var(--white-color);
+}
+.imgMove {
+    animation: imgRotate 7s linear infinite;
+}
+@keyframes imgRotate { 
+    100% { 
+        transform: translateY(40px); 
+    } 
+}
+#ContactUs h1 {
+    color: var(--main-color);
+}
+#ContactUs h2 {
+    color: var(--main-color);
+    font-weight: bold; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#ContactUs h4 {
+    color: var(--white-color);
+    font-size: 30px;
+}
+#ContactUs .icons a ,h6{
+    font-size: 30px;
+    margin: 10px ;
+    font-weight: bold; 
+    transition: all .50s ease;
+    color: var(--white-color);
+}
+#ContactUs .icons a:hover
+{
+    color: var(--shooting-color); 
+    transform: translateY(10px);
+}
